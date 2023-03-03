@@ -10,6 +10,7 @@ export default class Controller {
     this.#worker = this.#configureWorker(worker)
 
     this.#view.configureOnBtnClick(this.onBtnStart.bind(this))
+    this.#view.setVideoSrc(videoUrl)
   }
 
   static async initialize(deps) {
